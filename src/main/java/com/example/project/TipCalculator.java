@@ -33,10 +33,10 @@ public class TipCalculator {
      //TEST YOUR PROGRAM IN main
      public static void main(String[] args) {
         // try different values for people, percent, and cost to test your program before running test cases
-        int people = 0; 
-        int percent = 0;
-        double cost = 0;              
-        System.out.println(calculateTip(people,percent,cost));
+        // int people = 0; 
+        // int percent = 0;
+        // double cost = 0;              
+        // System.out.println(calculateTip(people,percent, cost));
     }
 }
         
