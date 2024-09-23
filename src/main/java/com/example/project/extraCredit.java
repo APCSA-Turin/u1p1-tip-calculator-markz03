@@ -11,18 +11,15 @@ import java.util.ArrayList;
 
 
 public class extraCredit {
-    //WRITE YOUR PROGRAM IN calculateTip
-    public static String calculateTip(int people, int percent, double cost) { //You must use these  variable in your calculations
-        //DO NOT DELETE ANY OF THE CODE BELOW      
+    //calculateTip
+    public static String calculateTip(int people, int percent, double cost) { 
         StringBuilder result = new StringBuilder();
-        //your code here
                        
         double totalTip = (cost * percent) /100.00;
         double totalBillWithTip = cost + totalTip;
         double personCost = cost / people;
         double personTipCost = totalTip / people;
         double totalCostPerPerson = totalBillWithTip / people;
-
 
         result.append("-------------------------------\n");
         result.append("Total bill before tip: $" + Math.round(cost*100) / 100.00 + "\n"); //concatenate to this string. DO NOT ERASE AND REWRITE
@@ -37,7 +34,8 @@ public class extraCredit {
 
         return result.toString();
     }
-     //TEST YOUR PROGRAM IN main
+
+     //MAIN
      public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String character = "";
@@ -48,7 +46,6 @@ public class extraCredit {
             character = scan.nextLine();
             itemsOrdered.add(character);
         }
-
 
         int people = 2; 
         int percent = 5;
@@ -64,11 +61,7 @@ public class extraCredit {
             i ++;
         }
 
-
-
-
         scan.close();
-        
     }
 }
         
